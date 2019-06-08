@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <Nav class="yellow">
+            <div class="nav-wrapper container">
+                <a href="" class="brand-logo">Bookers</a>
+                <ul class="right">     
+                <li><a href="">Biblioteca</a></li>
+                <li><a href="">Contacto</a></li> 
+                <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Categorias<i class="material-icons right">arrow_drop_down</i></a></li>           
+                <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#">one</a></li>
+                <li><a href="#">two</a></li>
+                <li><a href="#">three</a></li>
+              </ul>
+            </ul>
+            </div>
+        </Nav>
+        
+       <img src="imagenes/background.jpg" alt="" width="1366px" height="500px">
+
+
+        
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".dropdown-trigger").dropdown(open);
+            })
+        </script>
+    </body>
+
+    </html>
