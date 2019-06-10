@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <title>Document</title>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <Nav class="green">
+            <div class="nav-wrapper container">
+                <img src="../imagenes/libro.png" alt="" height="35px" width="35px"
+                    style="position: relative; top: 13px;">
+                <a href="" class="brand-logo">Bookers</a>
+            </div>
+        </Nav>
+    </div>
+    <div style="width: 500px;">
+        <div class="row">
+            <form class="col s12" id="form-libro">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="libro" type="text" class="validate">
+                        <label for="libro">Libro</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="autor" type="text" class="validate">
+                        <label for="autor">Autor</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="stock" type="text" class="validate">
+                        <label for="stock">Cantidad</label>
+                    </div>
+                </div>
+                <button id="boton" class="btn green waves-effect waves-light" type="button" onclick="agregar()">Agregar</button>
+            </form>
+        </div>
+        <table>
+        <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Autor</th>
+              <th>Cantidad</th>
+              <th>Eliminar</th>
+              <th>Editar</th>
+          </tr>
+        </thead>
+
+        <tbody id="tablamostrar">
+        </tbody>
+      </table>
+    </div>
+    
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>

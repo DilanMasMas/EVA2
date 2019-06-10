@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/validar2.js"></script>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <Nav class="green">
+            <div class="nav-wrapper container">
+                <img src="../imagenes/libro.png" alt="" height="35px" width="35px"
+                    style="position: relative; top: 13px;">
+                <a href="" class="brand-logo">Bookers</a>
+                <ul class="right">
+                    <li><a href="">Biblioteca</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="paginas/login.html">Admin</a></li>
+                </ul>
+            </div>
+        </Nav>
+    </div>
+    <div style="width: 700px;">
+        <div class="row">
+            <form class="col s12" id="foraut">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="user" type="text" class="validate">
+                        <label for="user">usuario</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="button" onclick="validar()">Entrar
+                        <i class="material-icons right">send</i>
+                      </button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+
+
+</html>

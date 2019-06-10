@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-    <html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
 
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-
-    <body>
-        <Nav class="yellow">
-            <div class="nav-wrapper container">
-                <a href="" class="brand-logo">Bookers</a>
-                <ul class="right">     
-                <li><a href="">Biblioteca</a></li>
-                <li><a href="">Contacto</a></li> 
-                <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Categorias<i class="material-icons right">arrow_drop_down</i></a></li>           
-                <ul id="dropdown1" class="dropdown-content">
-                <li><a href="#">one</a></li>
-                <li><a href="#">two</a></li>
-                <li><a href="#">three</a></li>
-              </ul>
-            </ul>
+  <body>
+        <div class="navbar-fixed">
+                <Nav class="green">
+                    <div class="nav-wrapper container">
+                        <img src="imagenes/libro.png" alt="" height="35px" width="35px" style="position: relative; top: 13px;">
+                        <a href="" class="brand-logo">Bookers</a>
+                        <ul class="right">
+                            <li><a href="">Biblioteca</a></li>
+                            <li><a href="">Contacto</a></li>
+                            <li><a href="paginas/login2.html">Admin</a></li>
+                        </ul>
+                    </div>
+                </Nav>
             </div>
-        </Nav>
-        
-       <img src="imagenes/background.jpg" alt="" width="1366px" height="500px">
+            <img src="imagenes/background.jpg" alt="" width="1366px" height="500px">
 
-
-        
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $(".dropdown-trigger").dropdown(open);
-            })
-        </script>
-    </body>
-
-    </html>
+            <div style="position: relative; bottom: 420px; width: 500px; left: 70px; color: white; background-color: rgba(76, 176, 80, 0.5)">
+                <h3>Bienvenido a Bookers</h3>
+                <p>
+                    Una pagina donde podras aumentar tu conocimiento y cultivar 
+                    tu creatividad con libros de todo tipo, saber mas detalles sobre tus 
+                    libros y autores favoritos
+                </p>
+                <br>
+                <a class="waves-effect waves-light btn">Ir a Muestra</a>
+            </div>
+            
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+     </script>
+  </body>
+</html>

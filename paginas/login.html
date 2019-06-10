@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/validar.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  // TODO: Replace with your project's customized code snippet
+  var config = {
+    apiKey: "AIzaSyCJ1FQVvUkpOmoc1XLd4c3ahlu8IIIG4oU",
+            authDomain: "eva2-f5936.firebaseapp.com",
+            databaseURL: "https://eva2-f5936.firebaseio.com",
+            projectId: "eva2-f5936",
+            storageBucket: "eva2-f5936.appspot.com",
+            messagingSenderId: "611276949802",
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <Nav class="green">
+            <div class="nav-wrapper container">
+                <img src="../imagenes/libro.png" alt="" height="35px" width="35px"
+                    style="position: relative; top: 13px;">
+                <a href="" class="brand-logo">Bookers</a>
+                <ul class="right">
+                    <li><a href="">Biblioteca</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="login.html">Admin</a></li>
+                </ul>
+            </div>
+        </Nav>
+    </div>
+    <div style="width: 700px;">
+        <div class="row">
+            <form class="col s12" id="form-aut">
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="user" type="text" class="validate">
+                        <label for="user">email</label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit">Submit
+                        <i class="material-icons right">send</i>
+                      </button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+</body>
+
+
+</html>
