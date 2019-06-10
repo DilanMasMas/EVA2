@@ -10,20 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="../js/validar.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  // TODO: Replace with your project's customized code snippet
-  var config = {
-    apiKey: "AIzaSyCJ1FQVvUkpOmoc1XLd4c3ahlu8IIIG4oU",
-            authDomain: "eva2-f5936.firebaseapp.com",
-            databaseURL: "https://eva2-f5936.firebaseio.com",
-            projectId: "eva2-f5936",
-            storageBucket: "eva2-f5936.appspot.com",
-            messagingSenderId: "611276949802",
-  };
-  firebase.initializeApp(config);
-</script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
 
 </head>
 
@@ -48,7 +36,7 @@
 
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="user" type="text" class="validate">
+                        <input id="email" type="email" class="validate">
                         <label for="user">email</label>
                     </div>
                 </div>
@@ -60,7 +48,7 @@
                         <label for="password">Password</label>
                     </div>
                 </div>
-                <button class="btn waves-effect waves-light" type="submit">Submit
+                <button class="btn waves-effect waves-light" type="button" onclick="auth()">Submit
                         <i class="material-icons right">send</i>
                       </button>
             </form>

@@ -3,7 +3,6 @@
 
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +18,7 @@
             <div class="nav-wrapper container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/eva2-f5936.appspot.com/o/libro.png?alt=media&token=e6e02eb0-13bb-44ef-8ed3-3ddde1df8d12" alt="" height="35px" width="35px"
                     style="position: relative; top: 13px;">
-                <a href="" class="brand-logo">Bookers</a>
+                <a href="../index.html" class="brand-logo">Bookers</a>
                 <ul class="right">
                     <li><a href="">Biblioteca</a></li>
                     <li><a href="">Contacto</a></li>
@@ -28,18 +27,21 @@
             </div>
         </Nav>
     </div>
-    <div style="width: 700px;">
+    <div style="position:relative; width:500px; text-align: center; 
+    margin-right: auto; margin-left: auto; top: 100px;background-color: rgba(76, 176, 80, 0.5);
+    height: 300px; border-radius: 20px;">
+    <br>
         <div class="row">
             <form class="col s12" id="foraut">
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="user" type="text" class="validate">
+                        <input id="user" type="text" class="validate" required>
                         <label for="user">usuario</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="password" type="password" class="validate">
+                        <input id="password" type="password" class="validate" required>
                         <label for="password">Password</label>
                     </div>
                 </div>
