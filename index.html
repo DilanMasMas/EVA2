@@ -14,10 +14,10 @@
             <div class="nav-wrapper container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/eva2-f5936.appspot.com/o/libro.png?alt=media&token=e6e02eb0-13bb-44ef-8ed3-3ddde1df8d12"
                     alt="" height="35px" width="35px" style="position: relative; top: 13px;">
-                <a href="" class="brand-logo">Bookers</a>
+                <a href="index.html" class="brand-logo">Bookers</a>
                 <ul class="right">
-                    <li><a href="">Biblioteca</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="paginas/biblioteca.html">Biblioteca</a></li>
+                    <li><a href="paginas/contacto.html">Contacto</a></li>
                     <li><a href="paginas/login2.html">Admin</a></li>
                 </ul>
             </div>
@@ -38,7 +38,7 @@
         <br>
         <a class="waves-effect waves-light btn" href="#tabla">Ir a Muestra</a>
     </div>
-    
+
     <div style="position:relative; bottom: 350px;
      background-color:rgba(76, 176, 80, 1);
      height:150px; color: white; text-align: center;">
@@ -50,33 +50,37 @@
     </div>
 
     <table style="position:relative; bottom:350px; " id="tabla">
-        <tr><th colspan="3" style="text-align:center;"><h1>Harry Potter</h1></th></tr>
         <tr>
-            <td><a href=""><img src="imagenes/harry2.jpg"></a></td>
-            <td><a href=""><img src="imagenes/harry.jpg"></a></td>
-            <td><a href=""><img src="imagenes/harry3.jpg"></a></td>
+            <th colspan="3" style="text-align:center;">
+                <h1>Harry Potter</h1>
+            </th>
+        </tr>
+        <tr>
+            <td><a href="libros/piedra.html"><img src="imagenes/harry1.jpg"></a></td>
+            <td><a href="libros/camara.html"><img src="imagenes/harry2.jpg"></a></td>
+            <td><a href="libros/prisionero.html"><img src="imagenes/harry3.jpg"></a></td>
 
         </tr>
     </table>
-    
 
-    <footer style="height:100px ; background-color: rgba(76, 176, 80, 1); text-align: center; color: white;" >
+
+    <footer style="height:100px ; background-color: rgba(76, 176, 80, 1); text-align: center; color: white;">
         <br>
         <br>
-            &copy; Copyright 2019 Bookers.
+        &copy; Copyright 2019 Bookers.
 
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-  $('a[href^="#"]').click(function() {
-    var destino = $(this.hash); //this.hash lee el atributo href de este
-    $('html, body').animate({ scrollTop: destino.offset().top }, 700); //Llega a su destino con el tiempo deseado
-    return false;
-  });
-});
+        $(document).ready(function () {
+            $('a[href^="#"]').click(function () {
+                var destino = $(this.hash); //this.hash lee el atributo href de este
+                $('html, body').animate({ scrollTop: destino.offset().top }, 700); //Llega a su destino con el tiempo deseado
+                return false;
+            });
+        });
     </script>
 </body>
 

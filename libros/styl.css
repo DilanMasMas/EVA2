@@ -1,0 +1,21 @@
+#libros{
+    position: relative;
+    height: 530px;
+    width: 353px;
+    left: 49px;
+}
+#contenido{
+    position: relative;
+    left: 500px;
+    bottom: 550px;
+    width: 400px;
+
+}
+#contenedor{
+    background: url("../imagenes/backh.png") center ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+}
