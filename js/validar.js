@@ -7,18 +7,20 @@ firebase.initializeApp({
 // Initialize Cloud Firestore through Firebase
 var db = firebase.firestore();
 
-function auth() {
-    var usuario = document.getElementById("email").value;
-    var contrasena = document.getElementById("password").value;
-
-    firebase.auth().sendSignInLinkToEmail(usuario, contrasena)
-        .then(function () {
-
-            window.localStorage.setItem('emailForSignIn', usuario);
-            console.log("aaaa");
-        })
-        .catch(function (error) {
-            console.log("error en la auf");
-        });
+function ingresar() {
+    var email1 = document.getElementById('email1').value;
+    var password1 = document.getElementById('password1').value;
+  
+    firebase.auth().signInWithEmailAndPassword(email1, password1).catch(function (error) {
+        
+        
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
+        console.log(errorCode);
+        console.log(errorMessage);
+    }); email1 - password1.html
 
 }
+//verificar la autenticacion

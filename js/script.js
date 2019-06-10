@@ -118,4 +118,14 @@ function editar(id, nombre, autor, cantidad) {
 
 
 }
+function cerrar() {
+    firebase.auth().signOut()
+        .then(function () {
+            location.href="../index.html";
+            
+        })
+        .catch(function (error) {
+            console.log(error)
+        })
+}
 

@@ -3,7 +3,7 @@ function validar(){
     var pass = document.getElementById("password").value;
 
     if (usuario=="dilan" && pass=="1234") {
-        alert("Correcto!")
+        alert("Bienvenido admin!")
         location.href = "../paginas/admin.html";
 
     } else {
