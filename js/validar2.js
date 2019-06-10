@@ -3,11 +3,11 @@ function validar(){
     var pass = document.getElementById("password").value;
 
     if (usuario=="dilan" && pass=="1234") {
-        alert("askdfjadshjfkls")
+        alert("Correcto!")
         location.href = "../paginas/admin.html";
 
     } else {
-        alert("lajksfjskl eeeee");
+        alert("Usuario o Contraseña incorrecto");
         
     }
     
