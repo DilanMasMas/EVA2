@@ -23,7 +23,7 @@
             </div>
         </Nav>
     </div>
-    <img src="imagenes/background.jpg" alt="" width="1366px" height="500px">
+    <img src="imagenes/background.jpg" alt="" width="1311px" height="500px">
 
     <div style="position: relative; bottom: 420px; width: 500px; 
         left: 70px; color: white; background-color: rgba(76, 176, 80, 0.5); border-radius: 20px;
@@ -36,27 +36,47 @@
             libros y autores favoritos
         </p>
         <br>
-        <a class="waves-effect waves-light btn">Ir a Muestra</a>
+        <a class="waves-effect waves-light btn" href="#tabla">Ir a Muestra</a>
     </div>
+    
     <div style="position:relative; bottom: 350px;
      background-color:rgba(76, 176, 80, 1);
      height:150px; color: white; text-align: center;">
-        <h3>porque leer?</h3>
-        <p>Leer es divertido y fácil. Los libros educan, dan tema de conversación, proporcionan compañía y son baratos, 
-            incluso gratis, si recurres a una biblioteca o al proyecto Gutenberg. Pero además de todo eso, leer es bueno para tu cerebro. Te hace más listo, te relaja, incluso te ayuda a ser mejor persona. En serio. Pero eso no son motivos para leer. Sólo son efectos secundarios.</p>
+        <h3>Leer?</h3>
+        <p>Leer es divertido y fácil. Los libros educan, dan tema de conversación, proporcionan compañía y son baratos,
+            incluso gratis, si recurres a una biblioteca o al proyecto Gutenberg. Pero además de todo eso, leer es bueno
+            para tu cerebro. Te hace más listo, te relaja, incluso te ayuda a ser mejor persona. En serio. Pero eso no
+            son motivos para leer. Sólo son efectos secundarios.</p>
     </div>
 
-    <footer style="height:100px ; background-color: rgba(76, 176, 80, 1);">
-        aslkfasklj
+    <table style="position:relative; bottom:350px; " id="tabla">
+        <tr><th colspan="3" style="text-align:center;"><h1>Harry Potter</h1></th></tr>
+        <tr>
+            <td><a href=""><img src="imagenes/harry2.jpg"></a></td>
+            <td><a href=""><img src="imagenes/harry.jpg"></a></td>
+            <td><a href=""><img src="imagenes/harry3.jpg"></a></td>
+
+        </tr>
+    </table>
+    
+
+    <footer style="height:100px ; background-color: rgba(76, 176, 80, 1); text-align: center; color: white;" >
+        <br>
+        <br>
+            &copy; Copyright 2019 Bookers.
+
     </footer>
 
-
-
-
-
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
+        $(document).ready(function() {
+  $('a[href^="#"]').click(function() {
+    var destino = $(this.hash); //this.hash lee el atributo href de este
+    $('html, body').animate({ scrollTop: destino.offset().top }, 700); //Llega a su destino con el tiempo deseado
+    return false;
+  });
+});
     </script>
 </body>
 
